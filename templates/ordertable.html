@@ -1,0 +1,34 @@
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">ORDERID</th>
+            <th scope="col">NAME</th>
+            <th scope="col">ADDRESS</th>
+            <th scope="col">PINCODE</th>
+            <th scope="col">CITY</th>
+            <th scope="col">STATE</th>
+            <th scope="col">COUNTRY</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for user in myuser %}
+    <tr>
+        <th scope="row">{{user.id}}</th>
+        <td>{{user.orderid}}</td>
+        <td>{{user.name}}</td>
+        <td>{{user.address}}</td>
+        <td>{{user.pincode}}</td>
+        <td>{{user.city}}</td>
+        <td>{{user.state}}</td>
+        <td>{{user.country}}</td>
+        <td><a href="/delete/{{user.orderid}}"><button type="button" class="del">Delete</button></a>
+        </td>
+    </tr>
+    
+    
+    {% endfor %}
+    
+    </tbody>
+    </table>
+    

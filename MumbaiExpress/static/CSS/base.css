@@ -1,0 +1,436 @@
+body{
+    margin:0;
+    padding:0;
+    font-family: 'poppins',sans-serif;
+    
+}
+/* navbar */
+header{
+    position: relative;
+    padding: 10px;
+    background: rgb(237, 199, 252);
+    box-sizing: border-box;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0,0,0,.2);
+}
+
+
+.logo{
+    color:rgb(162, 0, 255);
+    margin-top: -15px;
+    font-size: 30px;
+    line-height: 0px;
+    padding: 0 20px;
+    box-sizing: border-box;
+    float: left;
+    font-weight: 700;
+    text-decoration: none;
+}
+header .logo img{
+    margin-top:10px ;
+    height:40px;
+    border-radius: 50%;
+}
+
+
+nav{
+
+    float: center;
+
+}
+.clearfix{
+    clear:both;
+}
+nav ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+nav ul li{
+    list-style-type: none;
+   
+}
+
+nav ul li a{
+    display: block;
+    margin: 0px 0;;
+    padding: 10px 20px;
+    text-decoration: none;
+    color:black;
+    
+}
+nav ul li a.active,nav ul li a:hover{
+    background: white;
+    /* color:white; */
+    color:rgb(162, 0, 255);
+    transition: 0.5s;
+    box-shadow: 0 2px 5px rgba(0,0,0,.2);
+    border-radius: 10px;
+}
+#center{
+    margin-left: 100px;
+}
+.login{
+    margin-left: 220px;
+}
+
+
+
+/* navbar-end */
+/* footer-start */
+footer{
+    position: fixed;
+    bottom: 0px;
+    background-color: rgb(86, 27, 104);
+    width: 100%;
+    color: white;
+    display: flex;
+}
+footer ul{
+    display: flex;
+    text-decoration: none;
+    list-style-type: none;
+    /* padding-left: 20px; */
+   
+}
+footer ul li{
+    padding-right: 20px;
+}
+
+.name{
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+}
+/* footer div{
+    color: black;
+} */
+/* footer-end */
+
+
+/* home-image */
+#img1{
+    position: fixed;
+    right: 50px;
+    top:25%;
+    height: 60%;
+    width: auto;
+}
+#img2{
+    position: fixed;
+    right: 33%;
+    top:35%;
+    height: 50%;
+    width: auto;
+}
+
+/* home-logoname */
+.brandname{
+    position: fixed;
+    top: 25%;
+    left:3%;
+    text-align: center;
+    font-size: 200%;
+    line-height: 200%;
+    color: lightblue;
+    text-shadow: 5px 5px rgb(86, 27, 104);
+}
+span{
+    font-size: 250%;
+    color: rgb(162, 0, 255);
+}
+
+/* .opacityimg{
+    position: fixed;
+    left: -10px;
+    top: 6%;
+    border: 1px solid black;
+    border-radius: 50%;
+    opacity: 0.1;
+} */
+
+
+/* aboutus page */
+/* about us name */
+.aboutus{
+    position: fixed;
+    left: 47%;
+    top: 15%;
+    padding: 0px;
+    text-align: center;
+    width: 179px;
+    color: rgb(86, 27, 104);
+    box-shadow: 0 2px 5px rgb(0 0 0 / 20%);
+}
+.content{
+    position: fixed;
+    top: 45%;
+    width: 50%;
+    padding: 10px;
+    text-align: center;
+    font-size: larger;
+    color: rgb(162, 0, 255);line-height: 200%;
+    margin-left: 5%;
+    box-shadow: 0 2px 5px rgb(86, 27, 104);
+/* display: none; */
+}
+#img3{
+    position: fixed;
+    right: 5px;
+    margin-top: 70px;
+}
+
+
+/* login page */
+
+.myform{
+    position: fixed;
+    top: 25%;
+    left: 7%;
+    width: 30%;
+    padding: 5px;
+    text-align: center;
+    font-size: larger;
+    color: rgb(162, 0, 255);
+    line-height: 196%;
+    margin-left: 1%;
+    box-shadow: 0 2px 5px rgb(86 27 104);
+}
+.inp{
+    
+    padding:9px;
+    width: 40%;
+    border: none;
+    border-bottom:1px  solid rgb(162, 0, 255);
+    box-shadow:0px 1px ;
+    border-radius:10px;
+    color:rgb(86, 27, 104);
+    text-align: center;
+}
+::placeholder{
+color:rgb(86, 27, 104);
+}
+.mybtn{
+padding:5px;
+width:20%;
+color:white;
+background:rgb(162, 0, 255);
+border-radius:10px;
+border: none;
+}
+
+.mybtn:hover{
+color:black;
+box-shadow: 0 2px 5px rgb(86, 27, 104);
+}
+
+/* img of login and sign up page */
+
+.img4{
+    position: fixed;
+    right: 15%;
+    top: 25%;
+}
+.img5{
+    position: fixed;
+    right: 10%;
+    top: 30%;
+    height: 90%;
+    width: auto;
+}
+
+.div1{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 20px;
+}
+#login{
+    padding-top: 10px;
+}
+
+
+/*Contact Us Page*/
+
+.adress{
+    position: fixed;
+    top:180px;
+    left:300px;
+    box-shadow: 0 2px 5px rgba(0,0,0,.2);
+    background-color: antiquewhite;
+    color:darkorange;
+
+}
+
+.contactno{
+    position: fixed;
+    top:300px;
+    left:300px;
+    box-shadow: 0 2px 5px rgba(0,0,0,.2);
+    background-color: antiquewhite;
+    color:darkorange;
+}
+
+.email{
+    position: fixed;
+    top:410px;
+    left:300px;
+    box-shadow: 0 2px 5px rgba(0,0,0,.2);
+    background-color: antiquewhite;
+    color:darkorange;
+    
+}
+
+.fm{
+    position: fixed;
+    top:130px;
+    left:950px;
+    border:2px solid black;
+    padding: 5px;
+    width:280px;
+    border-radius: 20px;
+    background-color: palevioletred;
+
+    
+    
+
+    
+
+}
+
+.inpt{
+    padding:10px;
+    margin-left: 38px;
+    margin-top: 10px;
+    font-size: medium;
+    border-radius: 20px;
+
+}
+
+.hd{
+    margin-left:75px;
+    color:aqua;
+}
+.inpt::placeholder{
+    color: darkgreen;
+    
+}
+
+.sub{
+    color:blue;
+    margin-left:110px;
+    margin-top: 5px;
+    width:80px;
+}
+
+.serve{
+    position: fixed;
+    top:230px;
+    left:80px;
+    border:1px solid black;
+    border-radius: 15px;
+    color:darkblue;
+    background-color: cornflowerblue;
+    
+}
+
+.serve2{
+    position: fixed;
+    top:360px;
+    left:80px;
+    border:1px solid black;
+    border-radius: 15px;
+    color:darkblue;
+    background-color: cornflowerblue;
+    
+}
+
+
+.serve3{
+    position: fixed;
+    top:490px;
+    left:80px;
+    border:1px solid black;
+    border-radius: 15px;
+    color:darkblue;
+    background-color: cornflowerblue;
+}
+
+.para1{
+    position: fixed;
+    top:230px;
+    left:350px;
+    color:darkmagenta;
+    font-weight: bold;
+    line-height: 25px;
+    
+}
+
+.para2{
+    position:fixed;
+    top:360px;
+    left: 370px;
+    color:darkmagenta;
+    font-weight: bold;
+    line-height: 25px;
+    
+}
+
+.para3{
+    position:fixed;
+    top:470px;
+    left: 370px;
+    color:darkmagenta;
+    font-weight: bold;
+    line-height: 25px;
+}
+
+.ordfm{
+    position: fixed;
+    top:180px;
+    left:470px;
+    width:480px;
+    border: 2px solid black;
+    padding-left: 10px;
+    border-radius: 50px;
+
+}
+
+.btn1{
+    margin-bottom: 25px;
+    margin-left: 130px;
+    margin-top: 15px;
+    
+}
+
+.txt{
+    margin-bottom: 60px;
+    margin-left: 120px;
+    height:29px;
+    border-radius: 10px;
+    width:250px;
+}
+
+.st{
+    margin-left: 160px;
+    margin-bottom: 15px;
+}
+
+.or{
+    margin-left: 150px;
+}
+
+.data{
+    position: fixed;
+    top:450px;
+    left:430px;
+}
+
+
+.del{
+    position:fixed;
+    top:450px;
+    right:100px;
+    
+}
