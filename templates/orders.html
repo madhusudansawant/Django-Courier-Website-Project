@@ -1,0 +1,117 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Easy Destination</title>
+    <link rel="stylesheet" href="/static/CSS/base.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+</head>
+<body>
+    <header>
+       
+        <a href="#" class="logo"><img src="/static/images/logo.png" >&nbsp;Easy Destination</a>
+    
+        <nav>
+            <ul>
+                {% if user.is_authenticated %}
+                <li><a href="/" id="center">Home</a></li>
+                <li><a href="aboutus">About Us</a></li>
+                <li><a href="contactus">Contact Us</a></li>
+                <li><a href="services">Services</a></li>
+                <ul class="dropdown">
+                    <li><a href="orders">Orders</a></li>
+                </ul>
+                <li><a href="logout">Logout</a></li>
+        
+
+                {% else %}
+
+                <li><a href="/" id="center">Home</a></li>
+                <li><a href="signup" class="login">Sign Up</a></li>      
+                {% endif %}
+
+ 
+
+            </ul>
+        </nav>
+        <div class="clearfix"></div>
+    </header>
+   
+    <div class="aboutus">
+        <h1>
+            Orders
+        </h1>
+    </div>
+
+    <div class="ordfm">
+        <form method="post" action="orders">
+            {% csrf_token %}
+            <h3 class="or">ORDER TRACKING</h3>
+            <input type="radio" class="btn1" value="orderid" name="rad" id="orderid">
+            <label for="orderid">Order Id</label>
+
+        <input type="radio" class="btn2" value="mobileno" name="rad" id="mobileno">
+        <label for="mobileno">Mobile Number</label><br>
+
+        <input type="text" name="srch" class="txt" placeholder="Enter Mobile Number or Order id"><br>
+        <input type="submit" class="st" value="Track Your Order"><br>
+    </form>
+</div>
+    
+    
+    <div class="data">
+{% for user in myuser %}
+    
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">ORDERID</th>
+            <th scope="col">NAME</th>
+            <th scope="col">ADDRESS</th>
+            <th scope="col">PINCODE</th>
+            <th scope="col">CITY</th>
+            <th scope="col">STATE</th>
+            <th scope="col">COUNTRY</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for user in myuser %}
+    <tr>
+        <th scope="row">{{user.id}}</th>
+        <td>{{user.orderid}}</td>
+        <td>{{user.name}}</td>
+        <td>{{user.address}}</td>
+        <td>{{user.pincode}}</td>
+        <td>{{user.city}}</td>
+        <td>{{user.state}}</td>
+        <td>{{user.country}}</td>
+        <td><a href="delete/{{user.id}}"><button type="button" class="del">Delete</button></a>
+        </td>
+    </tr>
+    
+    
+    {% endfor %}
+    
+    </tbody>
+    </table>
+
+    {% endfor %}
+</div>
+
+    <footer>
+      <ul>
+        <li><a href="https://www.facebook.com"><i class="fab fa-facebook"></i></a></li>
+        <li><a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a></li>
+        <li><a href="https://www.youtube.com"><i class="fab fa-youtube-play"></i></li>
+      </ul>
+       <div class="name">Developed By : Madhusudan Sawant</div> 
+    </footer>
+</body>
+</html>

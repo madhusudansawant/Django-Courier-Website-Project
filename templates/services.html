@@ -1,0 +1,79 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Easy Destination</title>
+    <link rel="stylesheet" href="/static/CSS/base.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+</head>
+<body>
+    <header>
+       
+        <a href="#" class="logo"><img src="/static/images/logo.png" >&nbsp;Easy Destination</a>
+    
+        <nav>
+            <ul>
+                {% if user.is_authenticated %}
+                <li><a href="/" id="center">Home</a></li>
+                <li><a href="aboutus">About Us</a></li>
+                <li><a href="contactus">Contact Us</a></li>
+                <li><a href="services">Services</a></li>
+                <ul class="dropdown">
+                    <li><a href="orders">Orders</a></li>
+                </ul>
+                <li><a href="logout">Logout</a></li>
+            
+
+                {% else %}
+                <li><a href="/" id="center">Home</a></li>
+                <li><a href="signup" class="login">Sign Up</a></li>
+                {% endif %}
+            </ul>
+        </nav>
+        <div class="clearfix"></div>
+    </header>
+    <div class="aboutus">
+        <h1>
+            Services
+        </h1>
+    </div>
+
+    <div class="serve">
+        <h3 class="s1">Domestic Courier Services</h3>
+    </div>
+    <div class="para1">
+        <p> We Provide Domestic Courier Services.<br> This Service Use For Delivering Documents And Small Parcels</p>
+    </div>
+
+    <div class="serve2">
+        <h3 class="s2"> International Courier Services</h3>
+    </div>
+
+    <div class="para2">
+        <p> We Provide International Courier Services.<br> This Service Use For Large Parcels And Documents For Sending One Country To Another. </p>
+    </div>
+
+    <div class="serve3">
+        <h3 class="s3">Express Parcel</h3>
+    </div>
+
+    <div class="para3">
+        <p> We Provide Also Express Parcel. <br> This Service Use For Fastest Delivery Of Parcels<br> For Long Distance Delivery Maximum 48 To 96 Hours And Delivery Between 10km To 25km At Same Day </p>
+    </div>
+
+    <footer>
+      <ul>
+        <li><a href="https://www.facebook.com"><i class="fab fa-facebook"></i></a></li>
+        <li><a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a></li>
+        <li><a href="https://www.youtube.com"><i class="fab fa-youtube-play"></i></li>
+      </ul>
+       <div class="name">Developed By : Madhusudan Sawant</div> 
+    </footer>
+</body>
+</html>
